@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --sombra-anuncio: hsl(0, 65%, 61%);
+    --sombra-button: hsl(154, 75%, 41%);
+    --dark-blue:  hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body{
+    font-family: "Poppins";
+    font-size: 16px;
+    color: white;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    padding: 5%;
+    background-color: var(--red);
+    background-image: url("../images/bg-intro-mobile.png");
+}
+
+/* ARTICULOS */
+.article{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.article__titulo{
+    margin-bottom: 20px;
+}
+
+/* FORM */
+
+.container-form{
+    width: 100%;
+    height: auto;
+}
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin: 50px 0px 25px 0px;
+    width: 100%;
+    font-weight: 600;
+    background-color: var(--blue);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 4px var(--sombra-anuncio);
+}
+
+.anuncio span{
+    font-weight: 400;
+}
+.button{
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--green);
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    border-bottom: 4px solid var(--sombra-button);
+}
+
+.form{
+    width: 100%;
+    height: auto;
+    padding: 8%;
+    background-color: white;
+    color: var(--dark-blue);
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0px 8px 4px var(--sombra-anuncio);
+}
+
+.campo{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.campo > input{
+    height: 50px;
+    padding: 20px;
+    color: var(--dark-blue);
+    outline: none;
+    border: 0.5px solid #c4c4c4;
+    border-radius: 5px;
+}
+
+.campo label{
+    position: absolute;
+    left: 20px;
+    top: 25%;
+    font-size: 14px;
+    color: #787878;
+    transition:0.2s ease all; 
+}
+
+input:focus ~ label{  
+    top: 0;
+    font-size: 12px;
+}
+
+.terminos{
+    text-align: center;
+    color: var(--grayish-blue);
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.terminos span {
+    color: var(--red);
+    font-weight: 600;
+}
+
+@media screen and (min-width: 600px) {
+    .anuncio{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container{
+        padding: 10%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+
+    main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .article{
+        width: 45%;
+        text-align: left;
+    }
+
+    .article__titulo{
+        font-size: 45px;
+        
+    }
+    .container-form{
+        width: 50%;
+    }
+    
+    .container{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        padding: 5% 8%;
+        background-image: url("../images/bg-intro-desktop.png");
+    }
+}

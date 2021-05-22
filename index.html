@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="Reto sign up de frontend mentor">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="./css/style.css"></noscript>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <div class="container">
+    <main>
+      <article class="article">
+        <h1 class="article__titulo">Learn to code by watching others</h1>
+        <p class="article__parrafo"> See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </article>
+      <div class="container-form">
+        <div class="anuncio">Try it free 7 days<span>then $20/mo. thereafter</span></div>
+        <form class="form">
+          <div class="campo">
+            <input id="first-name" type="text">
+            <label for="first-name">First Name</label>
+          </div>
+          <div class="campo">
+            <input id="last-name" type="text">
+            <label for="last-name">Last Name</label>
+          </div>
+          <div class="campo">
+            <input id="email" type="email">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="campo">
+            <input id="password" type="password">
+            <label for="password">Password</label>
+          </div>
+          <button class="button button-submit"  type="submit">Claim your free trial </button>
+          <p class="terminos">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
