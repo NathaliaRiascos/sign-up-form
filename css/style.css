@@ -67,6 +67,7 @@ body{
 
 .anuncio span{
     font-weight: 400;
+    margin-left: 5px;
 }
 .button{
     color: white;
@@ -112,7 +113,7 @@ body{
 .campo label{
     position: absolute;
     left: 20px;
-    top: 25%;
+    top: 16px;
     font-size: 14px;
     color: #787878;
     transition:0.2s ease all; 
@@ -122,6 +123,11 @@ input:focus ~ label{
     top: 0;
     font-size: 12px;
 }
+
+input:focus {
+    border: 0.5px solid var(--dark-blue);
+}
+
 
 .terminos{
     text-align: center;
@@ -151,6 +157,7 @@ input:focus ~ label{
 
     main{
         width: 100%;
+        margin-top: 2%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -166,7 +173,7 @@ input:focus ~ label{
         
     }
     .container-form{
-        width: 50%;
+        width: 450px;
     }
     
     .container{
