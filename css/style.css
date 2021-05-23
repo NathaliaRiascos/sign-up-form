@@ -173,7 +173,7 @@ input:focus {
         
     }
     .container-form{
-        width: 450px;
+        width: 520px;
     }
     
     .container{
@@ -181,7 +181,7 @@ input:focus {
         display: flex;
         align-items: center;
         background-size: cover;
-        padding: 5% 8%;
+        padding: 0 10%;
         background-image: url("../images/bg-intro-desktop.png");
     }
 }
